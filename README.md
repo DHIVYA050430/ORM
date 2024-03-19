@@ -28,7 +28,7 @@ from django.db import models
 from django.contrib import admin
 
 class Train(models.Model):
-    train_code = models.CharField(max_length=20)
+    train_code = models.CharField(max_length=20,primary_key="True")
     train_name = models.CharField(max_length=100)
     start_time = models.TimeField()
     end_time = models.TimeField()
